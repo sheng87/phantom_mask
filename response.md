@@ -1,7 +1,8 @@
 # Response
 ## API Document (required)
-  Import [this](#api-document-required) json file to Postman
-
+  Database: postgres (PostgreSQL) 13.3
+  Rails 6.1.4
+  ruby 2.7.2
 ## Import Data Commands (required)
   * `rake import:pharmacy[PATH_TO_FILE]`
   * `rake import:user[PATH_TO_FILE]`
