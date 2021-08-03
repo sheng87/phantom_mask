@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cashBalance: 1.5
+  openingHours: MyString
+  masks: 
+
+two:
+  name: MyString
+  cashBalance: 1.5
+  openingHours: MyString
+  masks: 

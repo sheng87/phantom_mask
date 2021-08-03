@@ -1,0 +1,3 @@
+class Drugstore < ApplicationRecord
+
+end
