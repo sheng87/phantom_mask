@@ -631,3 +631,1921 @@ Migrating to CreateDrugstores (20210802141650)
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (14.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2021-08-05 16:03:11 +0800
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrugstoresController#index as HTML
+  [1m[36mDrugstore Load (8.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/drugstores_controller.rb:4:in `index'
+Completed 200 OK in 59ms (Views: 31.4ms | ActiveRecord: 15.5ms | Allocations: 18800)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-05 16:03:11 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-08-05 20:28:08 +0800
+Processing by DrugstoresController#index as HTML
+  [1m[36mDrugstore Load (7.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/drugstores_controller.rb:4:in `index'
+Completed 200 OK in 275ms (Views: 246.6ms | ActiveRecord: 39.8ms | Allocations: 14324)
+
+
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (1.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (2.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT "drugstores"."masks" FROM "drugstores"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "drugstores"."masks" FROM "drugstores"[0m
+  [1m[36mDrugstore Load (1.0ms)[0m  [1m[34mSELECT "drugstores"."masks" FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (2.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (1.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (6.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (28.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (2.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (1.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+Started GET "/" for ::1 at 2021-08-06 17:08:42 +0800
+  [1m[35m (10.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrugstoresController#index as HTML
+  [1m[36mDrugstore Load (12.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/drugstores_controller.rb:4:in `index'
+Completed 200 OK in 80ms (Views: 39.9ms | ActiveRecord: 23.1ms | Allocations: 18009)
+
+
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSearches (20210807081824)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (104.6ms)[0m  [1m[35mCREATE TABLE "searches" ("id" bigserial primary key, "opening_time" time, "opening_days" date, "mask_name" character varying, "min_price" decimal, "max_price" decimal, "drugstore_name" character varying, "transaction_amounts" decimal, "start_date" date, "end_date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210807081824"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mDrugstore Load (4.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (12.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks  ->> 'name' = 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (11.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks  ->> 'name' = ?) /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (14.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks  ->> 'name' ) /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (3.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE 'ani') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (2.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE 'Ani') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE 'Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->>'name' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->>'name' LIKE 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (1.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->>'name' = 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (6.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (name LIKE '%Better%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks:: json ->>'name' = 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (1.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks::json ->>'name' = 'AniMask (blue) (10 per pack)') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE 'Ani') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (2.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'name' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (5.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (2.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (13.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (name ILIKE '%bEtter%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'array' LIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks ->> 'array' ILIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (10.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks #>> '{name,0}' ILIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (15.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks #>> 'array' ILIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (8.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks::json ->> 2) /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (4.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE ('masks'::json ->> 2) /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "drugstores"."masks" FROM "drugstores"[0m
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE ('masks'::json ->> 0) /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (2.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks -> '[]' ->> 'name' ILIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (masks -> '[0]' ->> 'name' ILIKE '%Ani%') /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-08-09 01:25:09 +0800
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrugstoresController#index as HTML
+  [1m[36mDrugstore Load (2.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/drugstores_controller.rb:4:in `index'
+Completed 200 OK in 157ms (Views: 134.1ms | ActiveRecord: 2.2ms | Allocations: 15075)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-08-09 01:25:10 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSearches (20210807081824)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.3ms)[0m  [1m[35mDROP TABLE "searches"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (9.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210807081824"]]
+  [1m[36mTRANSACTION (60.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSearches (20210807081824)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.7ms)[0m  [1m[35mCREATE TABLE "searches" ("id" bigserial primary key, "opening_time" time, "opening_days" date, "mask_name" character varying, "min_price" decimal, "max_price" decimal, "drugstore_name" character varying, "transaction_amounts" decimal, "start_date" date, "end_date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210807081824"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20210808211429)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "cashBalance" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210808211429)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "cashBalance" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DropUsers (20210808211730)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.3ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808211730"]]
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210808211908)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "cashBalance" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808211908"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DropDrugstore (20210808212507)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.2ms)[0m  [1m[35mDROP TABLE "drugstore"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrugstores (20210808212801)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "drugstores" ("id" bigserial primary key, "name" character varying, "cash_balance" decimal, "opening_hours" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrugstores (20210808212801)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "drugstores" ("id" bigserial primary key, "name" character varying, "cash_balance" decimal, "opening_hours" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrugstores (20210808212801)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "drugstores" ("id" bigserial primary key, "name" character varying, "cash_balance" decimal, "opening_hours" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrugstores (20210808212801)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808212801"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DropDrugstores (20210808213127)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.7ms)[0m  [1m[35mDROP TABLE "drugstores"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808213127"]]
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePurchaseHistories (20210808213626)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "purchase_histories" ("id" bigserial primary key, "drugstore_name" character varying, "mask_name" character varying, "transaction_amount" decimal, "transaction_date" timestamp, "drugstore_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808213626"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMasks (20210808213732)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "masks" ("id" bigserial primary key, "name" character varying, "price" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808213732"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangePurchaseHistoriesColumn (20210808215038)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.4ms)[0m  [1m[35mALTER TABLE "purchase_histories" RENAME COLUMN "drugstore_id" TO "user_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210808215038"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (16.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "cashBalance", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eric Underwood"], ["cashBalance", "952.69"], ["created_at", "2021-08-09 13:10:01.393418"], ["updated_at", "2021-08-09 13:10:01.393418"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "cashBalance", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Peggy Maxwell"], ["cashBalance", "508.19"], ["created_at", "2021-08-09 13:11:13.231441"], ["updated_at", "2021-08-09 13:11:13.231441"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "cashBalance", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sherri Lynch"], ["cashBalance", "759.15"], ["created_at", "2021-08-09 13:11:55.839752"], ["updated_at", "2021-08-09 13:11:55.839752"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "cashBalance", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mindy Perkins"], ["cashBalance", "857.48"], ["created_at", "2021-08-09 13:12:28.653316"], ["updated_at", "2021-08-09 13:12:28.653316"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "cashBalance", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ruby Andrews"], ["cashBalance", "791.87"], ["created_at", "2021-08-09 13:12:59.847324"], ["updated_at", "2021-08-09 13:12:59.847324"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDrugstores (20210809131643)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCREATE TABLE "drugstores" ("id" bigserial primary key, "name" character varying, "cashBalance" decimal, "openingHours" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210809131643"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (4.6ms)[0m  [1m[32mINSERT INTO "masks" ("name", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "AniMask (blue) (10 per pack)"], ["price", "33.65"], ["created_at", "2021-08-09 13:19:48.239776"], ["updated_at", "2021-08-09 13:19:48.239776"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (0.4ms)[0m  [1m[32mINSERT INTO "masks" ("name", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Masquerade (black) (3 per pack)"], ["price", "16.75"], ["created_at", "2021-08-09 13:21:29.057799"], ["updated_at", "2021-08-09 13:21:29.057799"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (0.6ms)[0m  [1m[32mINSERT INTO "masks" ("name", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MaskT (black) (10 per pack)"], ["price", "14.9"], ["created_at", "2021-08-09 13:21:59.051451"], ["updated_at", "2021-08-09 13:21:59.051451"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (5.4ms)[0m  [1m[32mINSERT INTO "masks" ("name", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Second Smile (blue) (10 per pack)"], ["price", "39.98"], ["created_at", "2021-08-09 13:22:38.641872"], ["updated_at", "2021-08-09 13:22:38.641872"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (0.5ms)[0m  [1m[32mINSERT INTO "masks" ("name", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Free to Roam (green) (3 per pack)"], ["price", "8.83"], ["created_at", "2021-08-09 13:23:15.251377"], ["updated_at", "2021-08-09 13:23:15.251377"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (2.0ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "cashBalance", "openingHours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Better You"], ["cashBalance", "777.61"], ["openingHours", "Mon, Wed 12:56 - 21:58 / Tue 13:06 - 22:42 / Fri - Sat 17:09 - 20:20 / Sun 07:10 - 09:33"], ["created_at", "2021-08-09 13:25:23.316114"], ["updated_at", "2021-08-09 13:25:23.316114"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (0.4ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "cashBalance", "openingHours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cash Saver Pharmacy"], ["cashBalance", "596.94"], ["openingHours", "Mon 11:00 - 14:48 / Tue, Fri 00:05 - 07:20 / Sat - Sun 09:01 - 12:43"], ["created_at", "2021-08-09 13:26:52.515370"], ["updated_at", "2021-08-09 13:26:52.515370"]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (0.5ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "cashBalance", "openingHours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Precision Med"], ["cashBalance", "181.84"], ["openingHours", "Tue 14:10 - 16:25 / Wed 16:57 - 21:46 / Thu 16:30 - 19:40 / Fri 02:55 - 16:49 / Sun 10:59 - 05:33"], ["created_at", "2021-08-09 13:28:02.074181"], ["updated_at", "2021-08-09 13:28:02.074181"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (0.4ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "cashBalance", "openingHours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MedSavvy"], ["cashBalance", "903.57"], ["openingHours", "Tue 10:08 - 23:13 / Wed 12:38 - 21:48 / Thu 12:14 - 22:48 / Fri - Sat 15:01 - 21:24 / Sun 00:03 - 07:58"], ["created_at", "2021-08-09 13:29:26.882763"], ["updated_at", "2021-08-09 13:29:26.882763"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (0.4ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "cashBalance", "openingHours", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pill Pack"], ["cashBalance", "905.44"], ["openingHours", "Mon 07:14 - 17:06 / Tue 16:47 - 19:25 / Wed 15:30 - 19:00 / Sat 04:35 - 06:35 / Sun 01:39 - 16:59"], ["created_at", "2021-08-09 13:30:23.081486"], ["updated_at", "2021-08-09 13:30:23.081486"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.8ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mDrugstore Load (1.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mPurchaseHistory Load (4.1ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mPurchaseHistory Load (0.5ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPurchaseHistory Load (0.6ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPurchaseHistory Create (4.6ms)[0m  [1m[32mINSERT INTO "purchase_histories" ("drugstore_name", "mask_name", "transaction_amount", "transaction_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["drugstore_name", "Pill Pack"], ["mask_name", "MaskT"], ["transaction_amount", "14.9"], ["transaction_date", "2021-01-07 09:41:02"], ["user_id", 1], ["created_at", "2021-08-09 14:00:40.772547"], ["updated_at", "2021-08-09 14:00:40.772547"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPurchaseHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "purchase_histories" ("drugstore_name", "mask_name", "transaction_amount", "transaction_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["drugstore_name", "Better You"], ["mask_name", "AniMask"], ["transaction_amount", "33.65"], ["transaction_date", "2021-01-02 20:41:02"], ["user_id", 3], ["created_at", "2021-08-09 14:01:13.291943"], ["updated_at", "2021-08-09 14:01:13.291943"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPurchaseHistory Load (0.5ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPurchaseHistory Load (0.4ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories" WHERE "purchase_histories"."user_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPurchaseHistory Load (0.3ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories" WHERE "purchase_histories"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/" for ::1 at 2021-08-09 22:45:03 +0800
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrugstoresController#index as HTML
+  [1m[36mDrugstore Load (5.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/drugstores_controller.rb:4:in `index'
+Completed 200 OK in 89ms (Views: 69.5ms | ActiveRecord: 5.5ms | Allocations: 4344)
+
+
+Started GET "/ncskcs" for ::1 at 2021-08-09 22:45:34 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/ncskcs"):
+  
+Started GET "/api/v1/drugstores" for ::1 at 2021-08-09 22:46:15 +0800
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/" for ::1 at 2021-08-09 23:24:22 +0800
+  
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  
+config/routes.rb:4:in `block (3 levels) in <main>'
+config/routes.rb:3:in `block (2 levels) in <main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2021-08-09 23:25:58 +0800
+  
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  
+config/routes.rb:4:in `block (3 levels) in <main>'
+config/routes.rb:3:in `block (2 levels) in <main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2021-08-09 23:26:23 +0800
+  
+ActionController::RoutingError (uninitialized constant DrugstoresController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:26:25 +0800
+  
+ActionController::RoutingError (uninitialized constant DrugstoresController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:26:49 +0800
+  
+ActionController::RoutingError (uninitialized constant DrugstoresController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:27:24 +0800
+  
+ActionController::RoutingError (uninitialized constant DrugstoresController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:27:53 +0800
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DrugstoresController
+Did you mean?  Api::V1::DrugstoreController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:28:11 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (1.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 50.4ms | ActiveRecord: 11.0ms | Allocations: 6283)
+
+
+Started GET "/" for ::1 at 2021-08-09 23:28:42 +0800
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DrugstoresController
+Did you mean?  Api::V1::DrugstoreController):
+  
+Started GET "/" for ::1 at 2021-08-09 23:29:13 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (1.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 32.0ms | ActiveRecord: 14.7ms | Allocations: 4028)
+
+
+Started GET "/" for ::1 at 2021-08-09 23:43:39 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+    namespace :v1 :defaults => { :format => :jso...
+                  ^
+/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+...ults => { :format => :json } do
+...                             ^~
+):
+  
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-09 23:44:10 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+    namespace :v1 :defaults => { format: :json }...
+                  ^
+/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+...efaults => { format: :json } do
+...                             ^~
+):
+  
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-09 23:45:42 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+    namespace :v1 :defaults: {format: 'json'} do
+                  ^
+/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+... :defaults: {format: 'json'} do
+...                             ^~
+):
+  
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected ':', expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-09 23:45:55 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+    namespace :v1 defaults: {format: 'json'} do
+                  ^~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+...1 defaults: {format: 'json'} do
+...                             ^~
+):
+  
+config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+config/routes.rb:4: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:4: syntax error, unexpected `do', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-09 23:47:06 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:04 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:05 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:06 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:08 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:16 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:16 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:17 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:50:17 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+      name: drugstore.name,
+          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+      cashBalance: drugstore.cashBalance,
+      ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+      openingHours: drugstore.openingHours
+      ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:5: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-09 23:54:28 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected ':', expecting '}'
+        name: drugstore.name,
+            ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+        cashBalance: drugstore.cashBalance,
+        ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected tLABEL, expecting '='
+        openingHours: drugstore.openingHours
+        ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:10: syntax error, unexpected '}', expecting `end'
+        }
+        ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:10: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:10: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:31: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 00:03:28 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+        name: drugstore.name,
+            ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+        cashBalance: drugstore.cashBalance,
+        ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+        openingHours: drugstore.openingHours
+        ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+        }
+        ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 00:03:51 +0800
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::DrugstoreController
+Did you mean?  update
+               destroy
+               edit):
+  
+actionpack (6.1.4) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-08-10 00:04:06 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+        name: drugstore.name,
+            ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+        cashBalance: drugstore.cashBalance,
+        ^~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+        openingHours: drugstore.openingHours
+        ^~~~~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+        }
+        ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:6: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/drugstore_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/drugstore_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 00:04:45 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (2.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:5:in `map'
+Completed 200 OK in 34ms (Views: 0.5ms | ActiveRecord: 16.3ms | Allocations: 5549)
+
+
+Started GET "/" for ::1 at 2021-08-10 00:05:04 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:5:in `map'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 8.4ms | Allocations: 3614)
+
+
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddMaskPriceToDrugstore (20210810061248)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (25.0ms)[0m  [1m[35mALTER TABLE "drugstore" ADD "mask_price" decimal[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddMaskPriceToDrugstore (20210810061248)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.0ms)[0m  [1m[35mALTER TABLE "drugstores" ADD "mask_price" decimal[0m
+  [1m[36mActiveRecord::SchemaMigration Create (6.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210810061248"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mDrugstore Load (5.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" ORDER BY "drugstores"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPurchaseHistory Load (0.6ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mMask Load (2.1ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableForMaskAndStore (20210810064035)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableForMaskAndStore (20210810064035)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableForMaskAndDrugstore (20210810064035)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.2ms)[0m  [1m[35mCREATE TABLE "masks_drugstores" ("mask_id" bigint, "drugstore_id" bigint)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE INDEX "index_masks_drugstores_on_mask_id" ON "masks_drugstores" ("mask_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_masks_drugstores_on_drugstore_id" ON "masks_drugstores" ("drugstore_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210810064035"]]
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (1.0ms)[0m  [1m[34mSELECT "masks".* FROM "masks" ORDER BY "masks"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" ORDER BY "masks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMask Load (0.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeMasksDrugstoresToDrugstoresMasks (20210810065441)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "masks_drugstores" RENAME TO "drugstores_masks"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER INDEX "index_masks_drugstores_on_drugstore_id" RENAME TO "index_drugstores_masks_on_drugstore_id"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER INDEX "index_masks_drugstores_on_mask_id" RENAME TO "index_drugstores_masks_on_mask_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210810065441"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (0.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" ORDER BY "masks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mMask Load (0.9ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (14.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "drugstores" INNER JOIN "drugstores_masks" ON "drugstores"."id" = "drugstores_masks"."drugstore_id" WHERE "drugstores_masks"."mask_id" = $1[0m  [["mask_id", 3]]
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask::HABTM_Drugstores Create (6.8ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 3], ["drugstore_id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" INNER JOIN "drugstores_masks" ON "drugstores"."id" = "drugstores_masks"."drugstore_id" WHERE "drugstores_masks"."mask_id" = $1[0m  [["mask_id", 3]]
+  [1m[36mPurchaseHistory Load (0.7ms)[0m  [1m[34mSELECT "purchase_histories".* FROM "purchase_histories"[0m
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (0.4ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 1], ["drugstore_id", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (1.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (2.1ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 3], ["drugstore_id", 5]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 5]]
+  [1m[36mDrugstore Load (1.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (1.5ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 1], ["drugstore_id", 4]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 4]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (0.3ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 2], ["drugstore_id", 4]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 4]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 4]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (1.5ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 2], ["drugstore_id", 2]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  [1m[36mDrugstore Load (1.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (0.3ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 4], ["drugstore_id", 2]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (0.4ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 5], ["drugstore_id", 2]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore::HABTM_Masks Create (0.2ms)[0m  [1m[32mINSERT INTO "drugstores_masks" ("mask_id", "drugstore_id") VALUES ($1, $2)[0m  [["mask_id", 3], ["drugstore_id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 3]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 3]]
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."name" = $1 LIMIT $2[0m  [["name", "Bette You"], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."name" = $1 LIMIT $2[0m  [["name", "Better You"], ["LIMIT", 1]]
+  [1m[36mMask Load (1.0ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  [1m[36mMask Load (2.0ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+Started OPTIONS "/api/v1/drugstore" for ::1 at 2021-08-10 20:35:10 +0800
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/drugstore"):
+  
+Started GET "/api/v1/drugstore" for ::1 at 2021-08-10 20:44:07 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/drugstore"):
+  
+Started GET "/api/v1/drustores" for ::1 at 2021-08-10 20:44:41 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/drustores"):
+  
+Started GET "/api/v1/drustores/json" for ::1 at 2021-08-10 20:45:06 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/drustores/json"):
+  
+Started GET "/api/v1/drustores/.json" for ::1 at 2021-08-10 20:45:15 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/drustores/.json"):
+  
+Started GET "/" for ::1 at 2021-08-10 20:45:27 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+    render :json {message: "更新成功"}     ...
+                 ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+...:json {message: "更新成功"}                  
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 20:45:53 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+    render :json {message: "更新成功"}     ...
+                 ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+...:json {message: "更新成功"}                  
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 20:45:58 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+    render :json {message: "更新成功"}     ...
+                 ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+...:json {message: "更新成功"}                  
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 20:46:01 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+    render :json {message: "更新成功"}     ...
+                 ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+...:json {message: "更新成功"}                  
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '{', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-08-10 20:46:37 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+app/controllers/api/v1/drugstore_controller.rb:38: Invalid char `\x08' in expression
+Started GET "/" for ::1 at 2021-08-10 20:47:14 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (15.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 261ms (Views: 5.4ms | ActiveRecord: 68.4ms | Allocations: 7713)
+
+
+Started GET "/" for ::1 at 2021-08-10 20:47:15 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 807)
+
+
+Started GET "/" for ::1 at 2021-08-10 20:47:25 +0800
+Processing by Api::V1::DrugstoreController#index as */*
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 813)
+
+
+Started POST "/drugstores" for ::1 at 2021-08-10 20:56:59 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/drugstores"):
+  
+Started GET "/skncks" for ::1 at 2021-08-10 20:57:16 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/skncks"):
+  
+Started POST "/api/v1/drugstores" for ::1 at 2021-08-10 20:58:47 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/drugstores"):
+  
+Started GET "/skncks" for ::1 at 2021-08-10 20:59:33 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/skncks"):
+  
+Started GET "/api/v1/drugstore" for ::1 at 2021-08-10 20:59:45 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/drugstore"):
+  
+Started GET "/api/v1/drugstores" for ::1 at 2021-08-10 20:59:50 +0800
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Api):
+  
+Started GET "/api/v1/drugstores" for ::1 at 2021-08-10 21:00:26 +0800
+Processing by Api::V1::DrugstoreController#index as JSON
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 42ms (Views: 0.4ms | ActiveRecord: 7.7ms | Allocations: 6916)
+
+
+Started POST "/api/v1/drugstores" for ::1 at 2021-08-10 21:00:33 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/drugstores"):
+  
+Started POST "/api/v1/drugstores" for ::1 at 2021-08-10 21:00:48 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/drugstores"):
+  
+Started POST "/api/v1/drugstores" for ::1 at 2021-08-10 21:00:50 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/drugstores"):
+  
+Started GET "/api/v1/drugstores" for ::1 at 2021-08-10 21:00:55 +0800
+Processing by Api::V1::DrugstoreController#index as JSON
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 804)
+
+
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameMaskColumnName (20210811021731)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (34.5ms)[0m  [1m[35mALTER TABLE "mask" RENAME COLUMN "name" TO "mask_name"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8596530101663187285)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameMaskColumnName (20210811021731)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.9ms)[0m  [1m[35mALTER TABLE "masks" RENAME COLUMN "name" TO "mask_name"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210811021731"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8596530101663187285)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mDrugstore Load (9.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."name" = $1 LIMIT $2[0m  [["name", "Better You"], ["LIMIT", 1]]
+  [1m[36mMask Load (4.9ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+Started POST "/api/v1/1?name=Better%20me&mask_name=Red%20mask&price=18" for ::1 at 2021-08-11 10:33:23 +0800
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/1"):
+  
+Started POST "/api/v1/1" for ::1 at 2021-08-11 10:35:35 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/1"):
+  
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:36:24 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms | Allocations: 1778)
+
+
+  
+NameError (uninitialized constant Api::V1::DrugstoreController::Dugstore):
+  
+app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:37:51 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 1771)
+
+
+  
+NameError (uninitialized constant Api::V1::DrugstoreController::Dugstore):
+  
+app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:39:23 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+Completed 400 Bad Request in 49ms (ActiveRecord: 0.0ms | Allocations: 1709)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: drugstore
+Did you mean?  controller
+               id
+               action
+               format):
+  
+app/controllers/api/v1/drugstore_controller.rb:37:in `drugstore_params'
+app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:39:54 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+  [1m[36mDrugstore Load (4.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mDrugstore Load (23.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (Better me) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 51.7ms | Allocations: 6243)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "me"
+LINE 1: ...CT "drugstores".* FROM "drugstores" WHERE (Better me) LIMIT ...
+                                                             ^
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:41:01 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"\"Better me\"", "mask_name"=>"\"Red mask\"", "price"=>"18", "id"=>"1"}
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mDrugstore Load (3.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE ("Better me") LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.6ms | Allocations: 1027)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column "Better me" does not exist
+LINE 1: SELECT "drugstores".* FROM "drugstores" WHERE ("Better me") ...
+                                                       ^
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:43:00 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Completed 400 Bad Request in 83ms (ActiveRecord: 4.7ms | Allocations: 8812)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: mask
+Did you mean?  mask_name
+               name
+               action
+               id):
+  
+app/controllers/api/v1/drugstore_controller.rb:41:in `mask_params'
+app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:45:16 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+  [1m[36mDrugstore Load (9.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+  [1m[36mMask Load (5.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mMask Update (15.3ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "price" = $2, "updated_at" = $3 WHERE "masks"."id" = $4[0m  [["mask_name", "Red mask"], ["price", "18.0"], ["updated_at", "2021-08-11 02:45:16.699257"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mMask Update (3.5ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "price" = $2, "updated_at" = $3 WHERE "masks"."id" = $4[0m  [["mask_name", "Red mask"], ["price", "18.0"], ["updated_at", "2021-08-11 02:45:16.750097"], ["id", 3]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 49.3ms | Allocations: 15258)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument, String passed.):
+  
+app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 10:52:32 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better me", "mask_name"=>"Red mask", "price"=>"18", "id"=>"1"}
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mDrugstore Update (5.0ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better me"], ["updated_at", "2021-08-11 02:52:33.179236"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Completed 200 OK in 434ms (Views: 0.3ms | ActiveRecord: 29.6ms | Allocations: 14270)
+
+
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["drugstore_id", 1], ["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 11:45:27 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:17: syntax error, unexpected ')'
+...ask = Mask.find_by(mask_name: )
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:26: else without rescue is useless
+    else
+    ^~~~
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:17: syntax error, unexpected ')'
+app/controllers/api/v1/drugstore_controller.rb:26: else without rescue is useless
+app/controllers/api/v1/drugstore_controller.rb:17: syntax error, unexpected ')'
+app/controllers/api/v1/drugstore_controller.rb:26: else without rescue is useless
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 11:46:03 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better io", "mask_name"=>"green mask", "price"=>"20", "id"=>"1"}
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Completed 400 Bad Request in 121ms (ActiveRecord: 36.0ms | Allocations: 9052)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: mask
+Did you mean?  mask_name
+               name
+               action
+               id):
+  
+app/controllers/api/v1/drugstore_controller.rb:42:in `mask_params'
+app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 11:48:08 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better io", "mask_name"=>"green mask", "price"=>"20", "id"=>"1"}
+  [1m[36mDrugstore Load (1.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+Completed 400 Bad Request in 76ms (ActiveRecord: 23.9ms | Allocations: 7162)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: mask
+Did you mean?  mask_name
+               name
+               action
+               id):
+  
+app/controllers/api/v1/drugstore_controller.rb:42:in `mask_params'
+app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 11:49:16 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better io", "mask_name"=>"green mask", "price"=>"20", "id"=>"1"}
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:22:in `update'
+  [1m[36mMask Load (0.9ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mMask Update (0.8ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "price" = $2, "updated_at" = $3 WHERE "masks"."id" = $4[0m  [["mask_name", "green mask"], ["price", "20.0"], ["updated_at", "2021-08-11 03:49:17.153036"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mMask Update (4.2ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "price" = $2, "updated_at" = $3 WHERE "masks"."id" = $4[0m  [["mask_name", "green mask"], ["price", "20.0"], ["updated_at", "2021-08-11 03:49:17.167981"], ["id", 3]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mDrugstore Update (3.4ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better io"], ["updated_at", "2021-08-11 03:49:17.177755"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:24:in `update'
+Completed 200 OK in 141ms (Views: 1.0ms | ActiveRecord: 27.9ms | Allocations: 15743)
+
+
+  [1m[36mDrugstore Load (21.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:16:39 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better pp", "id"=>"1"}
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Completed 400 Bad Request in 70ms (ActiveRecord: 15.3ms | Allocations: 7099)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: drugstore
+Did you mean?  controller
+               id
+               action
+               format):
+  
+app/controllers/api/v1/drugstore_controller.rb:37:in `drugstore_params'
+app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:22:13 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better pp", "id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 9.5ms | Allocations: 5227)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument, NilClass passed.):
+  
+app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:23:42 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better pp", "id"=>"1"}
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mDrugstore Update (3.4ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better pp"], ["updated_at", "2021-08-11 04:23:42.346061"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 8.1ms | Allocations: 6931)
+
+
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:24:13 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better pp", "id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:21:in `update'
+Completed 400 Bad Request in 22ms (ActiveRecord: 3.3ms | Allocations: 5180)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: drugstore
+Did you mean?  controller
+               id
+               action
+               format):
+  
+app/controllers/api/v1/drugstore_controller.rb:37:in `drugstore_params'
+app/controllers/api/v1/drugstore_controller.rb:23:in `update'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:36:46 +0800
+  
+NoMethodError (undefined method `find_drugstore' for Api::V1::DrugstoreController:Class):
+  
+app/controllers/api/v1/drugstore_controller.rb:2:in `<class:DrugstoreController>'
+app/controllers/api/v1/drugstore_controller.rb:1:in `<main>'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:37:46 +0800
+  
+NoMethodError (undefined method `find_drugstore' for Api::V1::DrugstoreController:Class):
+  
+app/controllers/api/v1/drugstore_controller.rb:2:in `<class:DrugstoreController>'
+app/controllers/api/v1/drugstore_controller.rb:1:in `<main>'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:38:56 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/drugstore_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+...ore_action :find_drugstore only: [:update, :destroy]
+...                           ^~~~
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/api/v1/drugstore_controller.rb:2: syntax error, unexpected local variable or method, expecting `end'
+Started POST "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:39:22 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better You", "id"=>"1"}
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:33:in `find_drugstore'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mDrugstore Update (10.8ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better You"], ["updated_at", "2021-08-11 04:39:22.312107"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+Completed 200 OK in 106ms (Views: 0.3ms | ActiveRecord: 32.2ms | Allocations: 8880)
+
+
+Started PUT "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:41:59 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better ok", "id"=>"1"}
+  [1m[36mDrugstore Load (0.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:33:in `find_drugstore'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mDrugstore Update (5.8ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better ok"], ["updated_at", "2021-08-11 04:41:59.588591"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 17.4ms | Allocations: 6940)
+
+
+Started PUT "/api/v1/drugstores/1" for ::1 at 2021-08-11 12:43:15 +0800
+Processing by Api::V1::DrugstoreController#update as JSON
+  Parameters: {"name"=>"Better You", "id"=>"1"}
+  [1m[36mDrugstore Load (0.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:33:in `find_drugstore'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mDrugstore Update (1.9ms)[0m  [1m[33mUPDATE "drugstores" SET "name" = $1, "updated_at" = $2 WHERE "drugstores"."id" = $3[0m  [["name", "Better You"], ["updated_at", "2021-08-11 04:43:15.751494"], ["id", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:20:in `update'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 5.4ms | Allocations: 6917)
+
+
+Started PUT "/api/v1/masks/Better%20You" for ::1 at 2021-08-11 12:48:46 +0800
+  
+ActionController::RoutingError (uninitialized constant Api::V1::MaskController
+Did you mean?  Api::V1::MasksController
+               ApiController):
+  
+Started PUT "/api/v1/masks/BetterYou" for ::1 at 2021-08-11 12:49:33 +0800
+  
+ActionController::RoutingError (uninitialized constant Api::V1::MaskController
+Did you mean?  Api::V1::MasksController
+               ApiController):
+  
+Started PUT "/api/v1/masks/BetterYou" for ::1 at 2021-08-11 12:49:58 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+                   mask_name: mask.mask_name,
+                   ^~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+                   price: mask.price } 
+                   ^~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+...            price: mask.price } 
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/BetterYou" for ::1 at 2021-08-11 12:51:23 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+                   mask_name: mask.mask_name,
+                   ^~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+                   price: mask.price } 
+                   ^~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+...            price: mask.price } 
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 12:55:21 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+                   mask_name: mask.mask_name,
+                   ^~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+                   price: mask.price } 
+                   ^~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+...            price: mask.price } 
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:6: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:27: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:30: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 12:58:17 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL
+            mask_name: mask.mask_name,
+            ^~~~~~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+            price: mask.price 
+            ^~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:9: syntax error, unexpected '}', expecting `end'
+      } 
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected '}', expecting '}'
+...json: {message: '更新成功'}
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:30: Invalid char `\x08' in expression
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected '}', expecting '}'
+app/controllers/api/v1/masks_controller.rb:30: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:7: syntax error, unexpected tLABEL
+app/controllers/api/v1/masks_controller.rb:8: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/masks_controller.rb:9: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected '}', expecting '}'
+app/controllers/api/v1/masks_controller.rb:30: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:33: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:00:52 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/" for ::1 at 2021-08-11 13:02:34 +0800
+Processing by Api::V1::DrugstoreController#index as HTML
+  [1m[36mDrugstore Load (0.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:6:in `map'
+Completed 200 OK in 65ms (Views: 0.5ms | ActiveRecord: 16.8ms | Allocations: 7313)
+
+
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:08:58 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:10:12 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:10:48 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:12:17 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:12:34 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression):
+  
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+app/controllers/api/v1/masks_controller.rb:32: Invalid char `\x08' in expression
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:14:50 +0800
+  
+Zeitwerk::NameError (expected file /Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb to define constant Api::V1::MasksController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `const_get'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `block in constantize'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `each'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `inject'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `constantize'
+activesupport (6.1.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:15:45 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMask Load (17.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:5:in `edit'
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 25.8ms | Allocations: 4276)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "masks".* FROM "masks" WHERE (1) LIMIT $1
+                                             ^
+):
+  
+app/controllers/api/v1/masks_controller.rb:5:in `edit'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 13:16:46 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMask Load (3.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:5:in `edit'
+Completed 204 No Content in 51ms (ActiveRecord: 21.6ms | Allocations: 4524)
+
+
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrugstore Create (16.2ms)[0m  [1m[32mINSERT INTO "drugstores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "123"], ["created_at", "2021-08-11 05:52:01.863514"], ["updated_at", "2021-08-11 05:52:01.863514"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDrugstore Load (7.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (0.5ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+Started DELETE "/api/v1/drugstores/6" for ::1 at 2021-08-11 13:52:34 +0800
+Processing by Api::V1::DrugstoreController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mDrugstore Load (1.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:33:in `find_drugstore'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:28:in `destroy'
+  [1m[36mDrugstore::HABTM_Masks Destroy (16.8ms)[0m  [1m[31mDELETE FROM "drugstores_masks" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 6]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:28:in `destroy'
+  [1m[36mDrugstore Destroy (0.5ms)[0m  [1m[31mDELETE FROM "drugstores" WHERE "drugstores"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:28:in `destroy'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/drugstore_controller.rb:28:in `destroy'
+Completed 204 No Content in 205ms (ActiveRecord: 50.4ms | Allocations: 11079)
+
+
+  [1m[36mDrugstore Load (0.4ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDrugstore Load (0.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+  [1m[36mMask Load (2.1ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Update (0.9ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "updated_at" = $2 WHERE "masks"."id" = $3[0m  [["mask_name", "yellow mask"], ["updated_at", "2021-08-11 06:04:03.046823"], ["id", 3]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (2.8ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Update (0.6ms)[0m  [1m[33mUPDATE "masks" SET "price" = $1, "updated_at" = $2 WHERE "masks"."id" = $3[0m  [["price", "17.6"], ["updated_at", "2021-08-11 06:04:36.049124"], ["id", 3]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (2.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" INNER JOIN "drugstores_masks" ON "drugstores"."id" = "drugstores_masks"."drugstore_id" WHERE "drugstores_masks"."mask_id" = $1[0m  [["mask_id", 1]]
+Started PUT "/api/v1/masks/1" for ::1 at 2021-08-11 14:24:23 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected ':', expecting '}'
+      render json {message: 'failed'}
+                          ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected '}', expecting `end'
+...render json {message: 'failed'}
+...                              ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:28: syntax error, unexpected end-of-input, expecting `end'
+Started PUT "/api/v1/masks/1" for ::1 at 2021-08-11 14:24:49 +0800
+Processing by Api::V1::MasksController#update as JSON
+  Parameters: {"mask_name"=>"Black_mask", "price"=>"9.99", "id"=>"1"}
+Completed 500 Internal Server Error in 7ms (Allocations: 618)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/api/v1/masks_controller.rb:9:in `update'
+Started PUT "/api/v1/masks/1" for ::1 at 2021-08-11 14:26:36 +0800
+Processing by Api::V1::MasksController#update as JSON
+  Parameters: {"mask_name"=>"Black_mask", "price"=>"9.99", "id"=>"1"}
+  [1m[36mMask Load (1.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:9:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/masks_controller.rb:10:in `update'
+  [1m[36mMask Update (0.5ms)[0m  [1m[33mUPDATE "masks" SET "mask_name" = $1, "price" = $2, "updated_at" = $3 WHERE "masks"."id" = $4[0m  [["mask_name", "Black_mask"], ["price", "9.99"], ["updated_at", "2021-08-11 06:26:36.397251"], ["id", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:10:in `update'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/masks_controller.rb:10:in `update'
+Completed 200 OK in 117ms (Views: 0.2ms | ActiveRecord: 36.2ms | Allocations: 8102)
+
+
+  [1m[36mMask Load (11.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMask Create (18.5ms)[0m  [1m[32mINSERT INTO "masks" ("mask_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["mask_name", "kkl"], ["created_at", "2021-08-11 06:31:48.688541"], ["updated_at", "2021-08-11 06:31:48.688541"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMask Load (0.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+Started DELETE "/api/v1/masks/1" for ::1 at 2021-08-11 14:32:06 +0800
+Processing by Api::V1::MasksController#destroy as JSON
+  Parameters: {"mask_name"=>"kkl", "id"=>"1"}
+  [1m[36mMask Load (2.9ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."mask_name" = $1 LIMIT $2[0m  [["mask_name", "kkl"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:19:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/masks_controller.rb:20:in `destroy'
+  [1m[36mMask::HABTM_Drugstores Destroy (4.1ms)[0m  [1m[31mDELETE FROM "drugstores_masks" WHERE "drugstores_masks"."mask_id" = $1[0m  [["mask_id", 6]]
+  ↳ app/controllers/api/v1/masks_controller.rb:20:in `destroy'
+  [1m[36mMask Destroy (0.4ms)[0m  [1m[31mDELETE FROM "masks" WHERE "masks"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/masks_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/masks_controller.rb:20:in `destroy'
+Completed 204 No Content in 85ms (ActiveRecord: 22.8ms | Allocations: 9678)
+
+
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDrugstore Load (2.1ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" INNER JOIN "drugstores_masks" ON "drugstores"."id" = "drugstores_masks"."drugstore_id" WHERE "drugstores_masks"."mask_id" = $1[0m  [["mask_id", 1]]
+Started GET "/api/v1/drugstores/1" for ::1 at 2021-08-11 14:55:10 +0800
+Processing by Api::V1::DrugstoreController#edit as JSON
+  Parameters: {"mask_name"=>"kkl", "id"=>"1"}
+  [1m[36mDrugstore Load (7.8ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 14.8ms | Allocations: 4247)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "drugstores".* FROM "drugstores" WHERE (1) LIMIT $1
+                                                       ^
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Started GET "/api/v1/drugstores/1" for ::1 at 2021-08-11 14:55:17 +0800
+Processing by Api::V1::DrugstoreController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (1) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms | Allocations: 615)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "drugstores".* FROM "drugstores" WHERE (1) LIMIT $1
+                                                       ^
+):
+  
+app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Started GET "/api/v1/drugstores/1" for ::1 at 2021-08-11 14:55:59 +0800
+Processing by Api::V1::DrugstoreController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDrugstore Load (2.2ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Completed 204 No Content in 43ms (ActiveRecord: 9.5ms | Allocations: 5352)
+
+
+Started GET "/api/v1/drugstores/1" for ::1 at 2021-08-11 14:56:58 +0800
+Processing by Api::V1::DrugstoreController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/drugstore_controller.rb:17:in `edit'
+Completed 200 OK in 29ms (Views: 0.2ms | ActiveRecord: 8.8ms | Allocations: 5186)
+
+
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 14:58:05 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMask Load (4.0ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:5:in `edit'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 12.6ms | Allocations: 6317)
+
+
+  
+NoMethodError (undefined method `name' for #<Mask:0x00007f94a081e598>):
+  
+app/controllers/api/v1/masks_controller.rb:7:in `edit'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 14:58:36 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMask Load (0.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE "masks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:5:in `edit'
+Completed 200 OK in 26ms (Views: 1.9ms | ActiveRecord: 3.4ms | Allocations: 4343)
+
+
