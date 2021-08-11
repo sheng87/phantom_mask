@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get '/drugstores', to: 'drugstore#index'
       get '/drugstores/:id', to: 'drugstore#edit'
       get '/masks/:id', to: 'masks#edit'
+      post '/searches/:id', to: 'searches#create'
       put '/drugstores/:id', to: 'drugstore#update'
       put '/masks/:id', to: 'masks#update'
       delete 'masks/:mask_name', to: 'masks#destroy'

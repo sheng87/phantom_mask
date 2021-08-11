@@ -2549,3 +2549,536 @@ Processing by Api::V1::MasksController#edit as JSON
 Completed 200 OK in 26ms (Views: 1.9ms | ActiveRecord: 3.4ms | Allocations: 4343)
 
 
+Started GET "/tasks" for ::1 at 2021-08-11 15:40:09 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/tasks"):
+  
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:43:58 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"drugstore_id"=>"2", "id"=>"1"}
+  [1m[36mDrugstore Load (6.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:6:in `edit'
+  [1m[36mDrugstore Load (6.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE (2) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:9:in `edit'
+Completed 500 Internal Server Error in 194ms (Views: 3.8ms | ActiveRecord: 69.0ms | Allocations: 8050)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "drugstores".* FROM "drugstores" WHERE (2) LIMIT $1
+                                                       ^
+):
+  
+app/controllers/api/v1/masks_controller.rb:9:in `edit'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:44:51 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"drugstore_id"=>"2", "id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:6:in `edit'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:9:in `edit'
+  [1m[36mMask Load (4.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  ↳ app/controllers/api/v1/masks_controller.rb:11:in `map'
+Completed 500 Internal Server Error in 149ms (Views: 0.2ms | ActiveRecord: 14.0ms | Allocations: 10609)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/v1/masks_controller.rb:10:in `edit'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:46:09 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+        },
+         ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:46:35 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+        },
+         ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:49:05 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+        },
+         ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:16: syntax error, unexpected '}', expecting =>
+      name: {@drugstore.name}  
+                            ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:16: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:16: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:51:21 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting =>
+      name: {@drugstore.name}  
+                            ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:56:29 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+        },
+         ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+      } 
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:15: syntax error, unexpected ',', expecting '}'
+app/controllers/api/v1/masks_controller.rb:17: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:57:29 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected local variable or method, expecting '}'
+      data: @masks.map { |mask|
+      ^~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:18: syntax error, unexpected '}', expecting `end'
+    }
+    ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/api/v1/masks_controller.rb:18: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/masks_controller.rb:12: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/api/v1/masks_controller.rb:18: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/masks_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/masks/1" for ::1 at 2021-08-11 16:58:04 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"drugstore_id"=>"2", "id"=>"1"}
+  [1m[36mDrugstore Load (0.7ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:6:in `edit'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:9:in `edit'
+  [1m[36mMask Load (0.9ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  ↳ app/controllers/api/v1/masks_controller.rb:12:in `map'
+Completed 200 OK in 214ms (Views: 0.4ms | ActiveRecord: 88.9ms | Allocations: 10648)
+
+
+Started GET "/api/v1/masks/1?drugstore_id=2" for ::1 at 2021-08-11 17:00:31 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"drugstore_id"=>"2", "id"=>"1"}
+  [1m[36mDrugstore Load (0.3ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:6:in `edit'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:9:in `edit'
+  [1m[36mMask Load (0.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 2]]
+  ↳ app/controllers/api/v1/masks_controller.rb:12:in `map'
+Completed 200 OK in 63ms (Views: 0.2ms | ActiveRecord: 28.9ms | Allocations: 10583)
+
+
+  [1m[36mDrugstore Load (2.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+Started GET "/api/v1/masks/1?name=Better%20You" for ::1 at 2021-08-11 17:03:46 +0800
+Processing by Api::V1::MasksController#edit as JSON
+  Parameters: {"name"=>"Better You", "id"=>"1"}
+  [1m[36mDrugstore Load (4.6ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."name" = $1 LIMIT $2[0m  [["name", "Better You"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:6:in `edit'
+  [1m[36mCACHE Drugstore Load (0.0ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores" WHERE "drugstores"."name" = $1 LIMIT $2[0m  [["name", "Better You"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:7:in `edit'
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" INNER JOIN "drugstores_masks" ON "masks"."id" = "drugstores_masks"."mask_id" WHERE "drugstores_masks"."drugstore_id" = $1[0m  [["drugstore_id", 1]]
+  ↳ app/controllers/api/v1/masks_controller.rb:10:in `map'
+Completed 200 OK in 61ms (Views: 0.3ms | ActiveRecord: 11.5ms | Allocations: 10543)
+
+
+Started GET "/api/v1/searches/1" for ::1 at 2021-08-11 18:54:11 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/searches_controller.rb:14: syntax error, unexpected ':', expecting '}'
+        mask_name: mask.mask_name,
+                 ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/searches_controller.rb:15: syntax error, unexpected tLABEL, expecting '='
+        price: mask.price
+        ^~~~~~
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/searches_controller.rb:16: syntax error, unexpected '}', expecting `end'
+      }
+      ^
+/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/searches_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/searches_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/searches_controller.rb:15: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/searches_controller.rb:16: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/searches_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/searches_controller.rb:14: syntax error, unexpected ':', expecting '}'
+app/controllers/api/v1/searches_controller.rb:15: syntax error, unexpected tLABEL, expecting '='
+app/controllers/api/v1/searches_controller.rb:16: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/searches_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/searches/1" for ::1 at 2021-08-11 18:55:21 +0800
+Processing by Api::V1::SearchesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (8.6ms)[0m  [1m[34mSELECT "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/searches_controller.rb:11:in `show'
+Completed 404 Not Found in 140ms (ActiveRecord: 62.2ms | Allocations: 4040)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Search with 'id'=1):
+  
+app/controllers/api/v1/searches_controller.rb:11:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSearch Create (12.7ms)[0m  [1m[32mINSERT INTO "searches" ("mask_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["mask_name", "Better You"], ["created_at", "2021-08-11 10:56:38.692098"], ["updated_at", "2021-08-11 10:56:38.692098"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/searches/1" for ::1 at 2021-08-11 18:56:48 +0800
+Processing by Api::V1::SearchesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/searches_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.5ms | Allocations: 8846)
+
+
+  
+NoMethodError (undefined method `exists?' for "Better You":String):
+  
+app/models/search.rb:5:in `search_masks'
+app/controllers/api/v1/searches_controller.rb:13:in `show'
+Started GET "/api/v1/searches/1" for ::1 at 2021-08-11 18:59:59 +0800
+Processing by Api::V1::SearchesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/searches_controller.rb:11:in `show'
+  [1m[36mMask Load (10.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (mask_name LIKE '%Better You%')[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:13:in `show'
+Completed 200 OK in 125ms (Views: 0.3ms | ActiveRecord: 83.2ms | Allocations: 7937)
+
+
+  [1m[36mMask Load (9.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:08:17 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+Completed 400 Bad Request in 6ms (Allocations: 358)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: search
+Did you mean?  min_price
+               action
+               format
+               controller):
+  
+app/controllers/api/v1/searches_controller.rb:32:in `search_params'
+app/controllers/api/v1/searches_controller.rb:7:in `create'
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:09:08 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+Completed 400 Bad Request in 2ms (Allocations: 360)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: search
+Did you mean?  min_price
+               action
+               format
+               controller):
+  
+app/controllers/api/v1/searches_controller.rb:32:in `search_params'
+app/controllers/api/v1/searches_controller.rb:7:in `create'
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:10:51 +0800
+  
+SyntaxError (/Users/shengyun_huang/Desktop/phantom_task/app/controllers/api/v1/searches_controller.rb:7: syntax error, unexpected ')', expecting =>
+...min_price], params[:max_price])
+...                              ^
+):
+  
+app/controllers/api/v1/searches_controller.rb:7: syntax error, unexpected ')', expecting =>
+app/controllers/api/v1/searches_controller.rb:7: syntax error, unexpected ')', expecting =>
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:11:34 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (13.7ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["min_price", "10.0"], ["created_at", "2021-08-11 11:11:35.087778"], ["updated_at", "2021-08-11 11:11:35.087778"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (7.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= )[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 51.9ms | Allocations: 10751)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT "masks".* FROM "masks" WHERE (price >= )
+                                                      ^
+):
+  
+app/controllers/api/v1/searches_controller.rb:9:in `create'
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:12:39 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (0.4ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["min_price", "10.0"], ["created_at", "2021-08-11 11:12:39.816662"], ["updated_at", "2021-08-11 11:12:39.816662"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= )[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 17.5ms | Allocations: 9003)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: SELECT "masks".* FROM "masks" WHERE (price >= )
+                                                      ^
+):
+  
+app/controllers/api/v1/searches_controller.rb:9:in `create'
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:13:59 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (6.1ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["min_price", "10.0"], ["created_at", "2021-08-11 11:13:59.355941"], ["updated_at", "2021-08-11 11:13:59.355941"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (7.3ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= 'min_price')[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 17.5ms | Allocations: 8961)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  invalid input syntax for type numeric: "min_price"
+LINE 1: SELECT "masks".* FROM "masks" WHERE (price >= 'min_price')
+                                                      ^
+):
+  
+app/controllers/api/v1/searches_controller.rb:9:in `create'
+Started POST "/api/v1/searches/2" for ::1 at 2021-08-11 19:15:12 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "id"=>"2"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (0.3ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["min_price", "10.0"], ["created_at", "2021-08-11 11:15:12.828805"], ["updated_at", "2021-08-11 11:15:12.828805"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (2.7ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= 10.0)[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 200 OK in 49ms (Views: 1.8ms | ActiveRecord: 10.0ms | Allocations: 11378)
+
+
+  [1m[36mSearch Load (0.6ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+Started POST "/api/v1/searches/3" for ::1 at 2021-08-11 19:17:19 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"10", "max_price"=>"30", "id"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (1.3ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "max_price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["min_price", "10.0"], ["max_price", "30.0"], ["created_at", "2021-08-11 11:17:19.015290"], ["updated_at", "2021-08-11 11:17:19.015290"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (28.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= 10.0) AND (price <= 30.0)[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 200 OK in 49ms (Views: 0.7ms | ActiveRecord: 32.5ms | Allocations: 2366)
+
+
+Started POST "/api/v1/searches/3" for ::1 at 2021-08-11 19:23:36 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"min_price"=>"16", "max_price"=>"30", "id"=>"3"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (2.1ms)[0m  [1m[32mINSERT INTO "searches" ("min_price", "max_price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["min_price", "16.0"], ["max_price", "30.0"], ["created_at", "2021-08-11 11:23:36.507816"], ["updated_at", "2021-08-11 11:23:36.507816"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (2.0ms)[0m  [1m[34mSELECT "masks".* FROM "masks" WHERE (price >= 16.0) AND (price <= 30.0)[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 200 OK in 193ms (Views: 0.7ms | ActiveRecord: 20.2ms | Allocations: 12797)
+
+
+  [1m[36mDrugstore Load (29.9ms)[0m  [1m[34mSELECT "drugstores".* FROM "drugstores"[0m
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:13:00 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/1" for ::1 at 2021-08-11 20:14:44 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"1"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (1.8ms)[0m  [1m[32mINSERT INTO "searches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-08-11 12:14:44.118890"], ["updated_at", "2021-08-11 12:14:44.118890"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+Completed 200 OK in 80ms (Views: 2.1ms | ActiveRecord: 13.3ms | Allocations: 13004)
+
+
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:15:41 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/" for ::1 at 2021-08-11 20:20:40 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:20:47 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You/4" for ::1 at 2021-08-11 20:21:41 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You/?4" for ::1 at 2021-08-11 20:22:06 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:27:01 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:28:18 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore=Better%20You" for ::1 at 2021-08-11 20:30:17 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:31:37 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/searches"):
+  
+Started POST "/api/v1/searches/5" for ::1 at 2021-08-11 20:36:57 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"5"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (1.0ms)[0m  [1m[32mINSERT INTO "searches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-08-11 12:36:57.562735"], ["updated_at", "2021-08-11 12:36:57.562735"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (0.6ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mSearch Create (0.7ms)[0m  [1m[32mINSERT INTO "searches" ("drugstore_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["drugstore_name", "Better You"], ["created_at", "2021-08-11 12:36:57.607783"], ["updated_at", "2021-08-11 12:36:57.607783"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+Completed 500 Internal Server Error in 216ms (Views: 1.7ms | ActiveRecord: 30.5ms | Allocations: 19675)
+
+
+  
+NameError (undefined local variable or method `params' for #<Search:0x00007f949fa4f0e8>):
+  
+app/models/search.rb:10:in `search_masks_in_onestore'
+app/controllers/api/v1/searches_controller.rb:19:in `create'
+Started POST "/api/v1/searches/5" for ::1 at 2021-08-11 20:38:19 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"5"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (6.7ms)[0m  [1m[32mINSERT INTO "searches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-08-11 12:38:19.672592"], ["updated_at", "2021-08-11 12:38:19.672592"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (0.5ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mSearch Create (1.1ms)[0m  [1m[32mINSERT INTO "searches" ("drugstore_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["drugstore_name", "Better You"], ["created_at", "2021-08-11 12:38:19.731057"], ["updated_at", "2021-08-11 12:38:19.731057"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+Completed 500 Internal Server Error in 190ms (Views: 2.0ms | ActiveRecord: 63.5ms | Allocations: 18150)
+
+
+  
+NameError (undefined local variable or method `params' for #<Search:0x00007f9496dc3b38>):
+  
+app/models/search.rb:10:in `search_masks_in_onestore'
+app/controllers/api/v1/searches_controller.rb:19:in `create'
+Started POST "/api/v1/searches/5" for ::1 at 2021-08-11 20:39:50 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"5"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (0.3ms)[0m  [1m[32mINSERT INTO "searches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-08-11 12:39:51.080325"], ["updated_at", "2021-08-11 12:39:51.080325"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (0.4ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mSearch Create (1.1ms)[0m  [1m[32mINSERT INTO "searches" ("drugstore_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["drugstore_name", "Better You"], ["created_at", "2021-08-11 12:39:51.104025"], ["updated_at", "2021-08-11 12:39:51.104025"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+Completed 500 Internal Server Error in 70ms (Views: 0.8ms | ActiveRecord: 13.7ms | Allocations: 18148)
+
+
+  
+NameError (undefined local variable or method `params' for #<Search:0x00007f94a084c5d8>):
+  
+app/models/search.rb:10:in `search_masks_in_onestore'
+app/controllers/api/v1/searches_controller.rb:19:in `create'
+Started POST "/api/v1/searches/5" for ::1 at 2021-08-11 20:43:55 +0800
+Processing by Api::V1::SearchesController#create as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"5"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mSearch Create (4.3ms)[0m  [1m[32mINSERT INTO "searches" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2021-08-11 12:43:55.331745"], ["updated_at", "2021-08-11 12:43:55.331745"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:7:in `create'
+  [1m[36mMask Load (2.2ms)[0m  [1m[34mSELECT "masks".* FROM "masks"[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mSearch Create (1.4ms)[0m  [1m[32mINSERT INTO "searches" ("drugstore_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["drugstore_name", "Better You"], ["created_at", "2021-08-11 12:43:55.357511"], ["updated_at", "2021-08-11 12:43:55.357511"]]
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/searches_controller.rb:17:in `create'
+Completed 500 Internal Server Error in 103ms (Views: 0.7ms | ActiveRecord: 29.1ms | Allocations: 18163)
+
+
+  
+NameError (undefined local variable or method `params' for #<Search:0x00007f94995923a8>):
+  
+app/models/search.rb:10:in `search_masks_in_onestore'
+app/controllers/api/v1/searches_controller.rb:19:in `create'
+Started GET "/api/v1/searches/5?drugstore_name=Better%20You" for ::1 at 2021-08-11 20:50:17 +0800
+Processing by Api::V1::SearchesController#show as JSON
+  Parameters: {"drugstore_name"=>"Better You", "id"=>"5"}
+  [1m[36mSearch Load (1.4ms)[0m  [1m[34mSELECT "searches".* FROM "searches" WHERE "searches"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/searches_controller.rb:42:in `show'
+Completed 204 No Content in 74ms (ActiveRecord: 10.6ms | Allocations: 7694)
+
+

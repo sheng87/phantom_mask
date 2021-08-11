@@ -1,9 +1,14 @@
 class Search < ApplicationRecord
-  def advanced_search
-    drugstores = Drugstore.all
+  def search_masks_price
+    masks = Mask.all
+    masks = masks.where("price >= ?", min_price) if min_price.present?
+    masks = masks.where("price <= ?", max_price) if max_price.present?
+    return masks
+  end
 
-    drugstores = drugstores.where("name ILIKE ?", "%#{drugstore_name}%") if drugstore_name.exist?
-    drugstores = drugstores.where("masks ->> 'name' ILIKE ?", "%#{mask_name}%")  if mask_name.exist?
-    drugstores = drugstores.where("")
+  def search_masks_in_onestore
+    store_masks = Drugstore.find_by(drugstore_name: params[:drugstore_name]).masks
+    masks = store_masks.order("price asc") 
+    return masks
   end
 end

@@ -2,10 +2,17 @@ class Api::V1::MasksController < ApplicationController
   
 
   def edit
-    @mask = Mask.find(params[:id])
-    render json: {
-      mask_name: @mask.mask_name,
-      price: @mask.price
+    
+    @drugstore = Drugstore.find_by(name: params[:name])
+    @masks = Drugstore.find_by(name: params[:name]).masks
+    render json:{
+      name: @drugstore.name,
+      data: @masks.map { |mask|
+        {
+          mask_name: mask.mask_name,
+          price: mask.price
+        }
+      } 
     }
   end  
 
