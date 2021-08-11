@@ -4,11 +4,13 @@
 * ruby 2.7.2
 * Rails 6.1.4
 * PostgreSQL 13.3
+
 #### (I've made a few attempts to import raw data into database but I couldn't make it, so I inser parts of data with rails console manually.)  
+
 #### Task completed
-*List all pharmacies that have more or less than x mask products within a price range
-*Edit pharmacy name, mask name, and mask price
-*Remove a mask product from a pharmacy given by mask name
+* List all pharmacies that have more or less than x mask products within a price range
+* Edit pharmacy name, mask name, and mask price
+* Remove a mask product from a pharmacy given by mask name
 
 ## API Document (required)
 ### route resources
